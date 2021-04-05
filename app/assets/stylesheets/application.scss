@@ -13,4 +13,75 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap-sprockets";
 @import "bootstrap";
+ /* common */
+
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+
+a:visited {
+	color: #666;
+}
+
+
+/* header */
+.header-text {
+	color: white !important;
+	margin: 0;
+	font-size: 20px;
+}
+
+
+/* body */
+.body {
+	padding-top: 50px;
+}
+
+.body > p {
+	padding: 0;
+}
+
+.user-data {
+	font-weight: bold;
+}
+
+
+/* footer */
+footer > p {
+	font-size: 14px;
+}
+
+
+/* user_info */
+.edit-btn, .new-book-btn {
+	display: block;
+	position: relative;
+	width: 114%;
+	left: -16px;
+}
+
+.form-width {
+	position: relative;
+	width: 114%;
+	left: -16px;
+}
+
+.label-position {
+	position: relative;
+	left: -16px;
+}
+
+
+/* devise view */
+.field {
+	margin-bottom: 10px;
+}
+
+.form-detail {
+	height: 26px;
+	width: 152px;
+}
