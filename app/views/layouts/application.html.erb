@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://kit.fontawesome.com/de84e03a29.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -20,43 +21,43 @@
             <% if user_signed_in? %>
               <li class="">
                 <%= link_to user_path(current_user), class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+                <i class="fas fa-home" aria-hidden="true">Home</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to users_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-user" aria-hidden="true"> Users</span>
+                <i class="fas fa-users" aria-hidden="true">Users</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to books_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-book" aria-hidden="true"> Books</span>
+                <i class="fas fa-book" aria-hidden="true">Books</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to destroy_user_session_path, method: :delete, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-log-out" aria-hidden="true"> Logout</span>
+                <i class="fas fa-sign-out-alt" aria-hidden="true">logout</i>
                 <% end %>
               </li>
             <% else %>
               <li class="">
                 <%= link_to root_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-home" aria-hidden="true"> Home</span>
+                <i class="fas fa-home" aria-hidden="true">Home</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to home_about_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-link" aria-hidden="true"> About</span>
+                <i class="fas fa-link" aria-hidden="true">About</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to new_user_registration_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-edit" aria-hidden="true"> sign up</span>
+                <i class="fas fa-user-plus" aria-hidden="true">Sign Up</i>
                 <% end %>
               </li>
               <li class="">
                 <%= link_to new_user_session_path, class:"btn btn-link" do %>
-                <span class="glyphicon glyphicon-log-in" aria-hidden="true"> login</span>
+                <i class="fas fa-sign-in-alt" aria-hidden="true">Log in</i>
                 <% end %>
               </li>
             <% end %>
