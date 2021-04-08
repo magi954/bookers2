@@ -14,7 +14,7 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <nav class="nav navbar-left">
-            <span class="title">Bookers</span>
+            <%= link_to "Bookers",root_path, class:"title"%>
         </nav>
         <nav>
           <ul class="nav navbar-nav navbar-right">
@@ -57,7 +57,7 @@
               </li>
               <li class="">
                 <%= link_to new_user_session_path, class:"btn btn-link" do %>
-                <i class="fas fa-sign-in-alt" aria-hidden="true">Log in</i>
+                <i class="fas fa-sign-in-alt" aria-hidden="true">login</i>
                 <% end %>
               </li>
             <% end %>

@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     registrations: 'devise/registrations'
   }
   root to: 'homes#top'
-  
+
   get "/home/about" => "homes#about"
   resources :users
   resources :books
